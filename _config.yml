@@ -1,48 +1,101 @@
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely edit after that. If you find
-# yourself editing this file very often, consider using Jekyll's data files
-# feature for the data you need to update frequently.
-#
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
-#
-# If you need help with YAML syntax, here are some quick references for you:
-# https://learn-the-web.algonquindesign.ca/topics/markdown-yaml-cheat-sheet/#yaml
-# https://learnxinyminutes.com/docs/yaml/
-#
-# Site settings
-# These are used to personalize your new site. If you look in the HTML files,
-# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
-# You can create any custom variable you would like, and they will be accessible
-# in the templates via {{ site.myvariable }}.
+# Theme
+remote_theme: "mmistakes/minimal-mistakes"
+minimal_mistakes_skin: "dark" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum" "sunrise"
+#theme: minima  # base Jekyll theme
 
-title: "Ernes's Blog"
+
+# Site settings
+title: "Ernesto Contreras"
+title_separator: "|"
+subtite: "My Data Blog"
 email: ernesto.c16@gmail.com
-description:  This is my data blog! I am awesome ;)
-baseurl: "" 
-url: "https://3rn3s7o.github.io/"
+description: This is my data blog! I can add a description here. 
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://3rn3s7o.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: 3rn3s
 github_username:  3rn3s7o
+repository: "3rn3s7o/3rn3s7o.github.io"
+
+locale: "en-US"
+logo: "assets/images/FOTO.png"
+
+# Author Profile
+author:
+  name             : "Ernesto Contreras"
+  avatar           : "assets/images/FOTO.jpeg"
+  bio              : "Data Scientist"
+  location         : "Munich, DE"
+  email            : ernesto.c16@gmail.com
+  uri              :
+  bitbucket        :
+  codepen          :
+  dribbble         :
+  flickr           :
+  facebook         :
+  foursquare       :
+  github           : "3rn3s7o"
+  google_plus      :
+  keybase          :
+  instagram        :
+  lastfm           :
+  linkedin         : "."
+  pinterest        :
+  soundcloud       :
+  stackoverflow    :
+  steam            :
+  tumblr           :
+  twitter          : "3rn3s"
+  vine             :
+  weibo            :
+  xing             :
+  youtube          :
+
+
+## Social Sharing
+#twitter:
+#  username:
+#facebook:
+#  username:
+#
+
+
+# Site Footer
+footer:
+  links:
+    - label: "Twitter"
+      icon: "fab fa-fw fa-twitter-square"
+      url: "https://twitter.com/3rn3s"
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://linkedin.com/in/"
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/3rn3s7o"
+
+# Analytics
+analytics:
+  provider: # false (default), "google", "google-universal", "custom"
+  google:
+    tracking_id: # Ex. UA-XXXXXXXXX-XX
+    anonymize_ip: #true, false (default)
 
 # Build settings
-#theme: minima
-remote_theme: "mmistakes/minimal-mistakes"
-minimal_mistakes_skin: "dark" # "air", "aqua", "contraste"
 plugins:
   - jekyll-feed
   - jekyll-include-cache
+  
+# Conversion
+markdown: kramdown
+highlighter: rouge
+lsi: false
+excerpt_separator: "\n\n"
+incremental: false
 
+# Include
+include:
+  - _pages
 
 # Exclude from processing.
-# The following items will not be processed, by default.
-# Any item listed under the `exclude:` key here will be automatically added to
-# the internal "default list".
-#
-# Excluded items can be processed by explicitly listing the directories or
-# their entries' file path in the `include:` list.
-#
 # exclude:
 #   - .sass-cache/
 #   - .jekyll-cache/
@@ -55,53 +108,65 @@ plugins:
 #   - vendor/gems/
 #   - vendor/ruby/
 
-defaults: 
-# _posts
--scope:
-path: ""
-type: posts
-values:
-layout: single
-author_profile: true
-read_time: true 
-comments: true 
-share: false 
-related: true 
-show_date: true
-
 # Pagination
-paginate: 5 # posts per page
-paginate_path: /page:num/
+paginate: 5  # posts per page
+#paginate_path: /page:num/
+paginate_path: /blog/page:num
 
-# Build settings
-plugins:
-- jekyll-feed
-- jekyll-include-cache
-- jekyll-paginate-v2
-# Include
-include:
-- _pages
-# Site Author Profile
-author:
-name  :   "Ernesto Contreras"
-avatar: "assets/images/"FOTO.jpg"
-bio: "Mechanical Engineer"
-location: "Munich, DE"
-email: ernesto.c16@gmail.com
-github: "3rn3s7o"
+# Collections
+collections:
+  porfolio:
+    output: true
+    permalink: /:collection/:path/
+  archives:
+    output: true
+    permalink: /archives/:path/
 
-# Formatting
+# Archives
+category_archive:
+  type: liquid
+  path: /categories/
+tag_archive:
+  type: liquid
+  path: /tags/
+
+# Post Formatting
 defaults:
-# _posts
-- scope:
-path: ""
-type: posts
-values: author_profile: true 
-
-#pages
-- scope:
-path: ""
-type: pages
-values: 
-author_profile:  true 
-
+  # _posts
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      author_profile: true
+      read_time: true
+      comments: true
+      share: false
+      related: true
+      show_date: true
+      sidebar:
+        nav: "my_sidebar"
+  #pages
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: single
+      author_profile: true
+      read_time: false
+      comments: true
+      share: false
+      related: false
+      sidebar:
+        nav: "my_sidebar"
+  #_portfolio
+  - scope:
+      path: ""
+      type: portfolio
+    values:
+      layout: single
+      author_profile: false
+      read_time: false
+      comments: false
+      share: false
+      related: false
