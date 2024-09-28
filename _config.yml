@@ -12,7 +12,7 @@ email: ernesto.c16@gmail.com
 description: This is my data blog! I can add a description here. 
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://3rn3s7o.github.io" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: 3rn3s
+twitter_username: 3rn3s_1
 github_username:  3rn3s7o
 repository: "3rn3s7o/3rn3s7o.github.io"
 
@@ -44,7 +44,7 @@ author:
   stackoverflow    :
   steam            :
   tumblr           :
-  twitter          : "3rn3s"
+  twitter          : "3rn3s_1"
   vine             :
   weibo            :
   xing             :
@@ -64,7 +64,7 @@ footer:
   links:
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
-      url: "https://twitter.com/3rn3s"
+      url: "https://twitter.com/3rn3s_1"
     - label: "LinkedIn"
       icon: "fab fa-fw fa-linkedin"
       url: "https://linkedin.com/in/"
