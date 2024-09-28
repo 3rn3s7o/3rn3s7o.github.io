@@ -1,11 +1,23 @@
 ---
-layout: post
-title:  "Creating your Blog"
-date:   2024-09-28-welcome-to-jekyll.markdown
+title:  "Creating a Post with a TOC"
+date:   2022-03-14
+
 categories: 
-- blog
-tags: 
--jekyll
--images
+  - blog
+
+tags:
+  - jekyll
+  - github pages
+  - extras
+
+toc: true
+toc_sticky: true
 ---
 
+# Header 1
+
+## Header 2
+
+Some content goes here!
+
+# Another Header 1
