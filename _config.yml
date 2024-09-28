@@ -27,7 +27,7 @@ twitter_username: 3rn3s
 github_username:  3rn3s7o
 
 # Build settings
-theme: minima
+theme: Cayman
 plugins:
   - jekyll-feed
 
