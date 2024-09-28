@@ -58,6 +58,7 @@ plugins:
 defaults: 
 # _posts
 -scope:
+path: ""
 type: posts
 values:
 layout: single
@@ -80,3 +81,27 @@ plugins:
 # Include
 include:
 - _pages
+# Site Author Profile
+author:
+name  :   "Ernesto Contreras"
+avatar: "assets/images/"FOTO.jpg"
+bio: "Mechanical Engineer"
+location: "Munich, DE"
+email: ernesto.c16@gmail.com
+github: "3rn3s7o"
+
+# Formatting
+defaults:
+# _posts
+- scope:
+path: ""
+type: posts
+values: author_profile: true 
+
+#pages
+- scope:
+path: ""
+type: pages
+values: 
+author_profile:  true 
+
