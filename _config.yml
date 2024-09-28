@@ -5,14 +5,13 @@ minimal_mistakes_skin: "dark" # "air", "aqua", "contrast", "dark", "dirt", "neon
 
 
 # Site settings
-title: "Ernes' Corner"
-title_separator: "|"
+title: "Ernesto's Blog"
 subtite: "My Data Blog"
 email: ernesto.c16@gmail.com
 description: This is my data blog! I can add a description here. 
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://3rn3s7o.github.io" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: 3rn3s_1
+twitter_username: ernes_1
 github_username:  3rn3s7o
 repository: "3rn3s7o/3rn3s7o.github.io"
 
@@ -23,7 +22,7 @@ logo: "assets/images/FOTO.png"
 author:
   name             : "Ernesto Contreras"
   avatar           : "assets/images/FOTO.jpg"
-  bio              : "Data Scientist"
+  bio              : "Mechanical Engineer"
   location         : "Munich, DE"
   email            : ernesto.c16@gmail.com
   uri              :
@@ -44,7 +43,7 @@ author:
   stackoverflow    :
   steam            :
   tumblr           :
-  twitter          : "3rn3s_1"
+  twitter          : "ernes_1"
   vine             :
   weibo            :
   xing             :
@@ -64,7 +63,7 @@ footer:
   links:
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
-      url: "https://twitter.com/3rn3s_1"
+      url: "https://twitter.com/ernes_1"
     - label: "LinkedIn"
       icon: "fab fa-fw fa-linkedin"
       url: "https://linkedin.com/in/"
