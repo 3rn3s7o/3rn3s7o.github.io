@@ -29,6 +29,7 @@ github_username:  3rn3s7o
 # Build settings
 #theme: minima
 remote_theme: "mmistakes/minimal-mistakes"
+minimal_mistakes_skin: "dark" # "air", "aqua", "contraste"
 plugins:
   - jekyll-feed
   - jekyll-include-cache
