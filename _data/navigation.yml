@@ -1,21 +1,20 @@
 main:
-- title: "About"
-url: /about/
-- title: "Contact"
-url: /contact/
-- title: "Portfolio"
-url: /portfolio/
-- title: "Posts"
-url: /posts/
-- title: "Github"
-url: https://github.com/3rn3s7o
-
-#Sidebar - displays under Author Profile
+  - title: "Blog"
+    url: /blog/
+  - title: "Portfolio"
+    url: /portfolio/
+  - title: "About"
+    url: /about/
+  - title: "Contact"
+    url: /contact/
+  - title: "GitHub"
+    url: https://github.com/laurburke
+  
+# Sidebar - displays under Author Profile
 my_sidebar:
- - title: Archives 
-   children:
-   - title: "Category"
-     url: /categories/
-   - title: "Tag"
-     url: /tags/
-      
+  - title: Archives
+    children:
+      - title: "Category"
+        url: /categories/
+      - title: "Tag"
+        url: /tags/
