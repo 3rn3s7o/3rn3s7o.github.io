@@ -70,6 +70,9 @@ footer:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/3rn3s7o"
+    - label: "Instagram"
+      icon: "fa fa-instagram"
+      url: "https://www.instagram.com/3rn3s"
 
 # Analytics
 analytics:
