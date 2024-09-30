@@ -150,7 +150,7 @@ defaults:
         nav: "my_sidebar"
   #pages
   - scope:
-      path: ""
+      path: "/blog/page:num/"
       type: pages
     values:
       layout: single
