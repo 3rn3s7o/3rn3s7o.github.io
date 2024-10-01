@@ -21,4 +21,3 @@ toc_sticky: true
 
 Some content goes here!
 
-# Another Header 1
