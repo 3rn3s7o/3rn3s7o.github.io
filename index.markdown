@@ -1,5 +1,5 @@
 ---
-layout: single
+layout: home
 author_profile: true
 ---
 
@@ -17,7 +17,3 @@ Instead of having a blog as my homepage, I can change the layout!
 Learn more about me [here](/about/).
 
 
-#### Learn to Blog
-Follow this tutorial to learn how to create your own blog with Jekyll and GitHub Pages!
-
-![](/assets/images/lets-get-blogging.jpeg) 
